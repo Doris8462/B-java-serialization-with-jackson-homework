@@ -15,6 +15,6 @@ public class TimeSerializer extends StdSerializer<Date> {
     @Override
     public void serialize(Date date, JsonGenerator gen, SerializerProvider provider)
             throws IOException {
-        gen.writeNumber(String.valueOf(date.toInstant().toEpochMilli()));
+        gen.writeNumber(date.getTime());
     }
 }
