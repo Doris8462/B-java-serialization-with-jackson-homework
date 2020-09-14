@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UserVo {
 
-  @JsonProperty("userId")
-  private String id;
-  @JsonProperty("userName")
-  private String name;
+    @JsonProperty("userId")
+    private String id;
+    @JsonProperty("userName")
+    private String name;
 }
